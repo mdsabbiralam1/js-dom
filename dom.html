@@ -10,14 +10,50 @@
 
 
 <body>
-    <header>Welcome to my blog website</header>
+    <header>
+        <h2>Welcome to my blog website</h2>
+    </header>
     <main>
         <section>
-            article*3>h3{my awesome j}
+            <article>
+                <h3>my awesome blog -1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident nihil tempora nulla debitis!
+                    Id aspernatur minima asperiores eius natus sunt architecto quos ipsum, numquam delectus minus quod
+                    reprehenderit commodi.</p>
+            </article>
+            <article>
+                <h3>my awesome blog -2</h3>
+                <p>Obcaecati omnis sed nobis tempore ut quibusdam voluptatem, accusantium vel sequi doloribus odio
+                    laboriosam maxime molestiae veritatis aliquid quae nostrum, asperiores corporis exercitationem
+                    delectus dolorem doloremque dolores dolorum. Consectetur, repudiandae!</p>
+            </article>
+            <article>
+                <h3>my awesome blog -3</h3>
+                <p>Praesentium officia, doloremque atque optio ipsum quas soluta fuga voluptas consequatur saepe
+                    molestias ipsa tenetur quibusdam, magni assumenda illo cum nemo commodi alias labore, quasi minus
+                    harum odit! Accusamus, eligendi!</p>
+            </article>
+            <article>
+                <h3>my awesome blog -4</h3>
+                <p>Praesentium officia, doloremque atque optio ipsum quas soluta fuga voluptas consequatur saepe
+                    molestias ipsa tenetur quibusdam, magni assumenda illo cum nemo commodi alias labore, quasi minus
+                    harum odit! Accusamus, eligendi!</p>
+            </article>
         </section>
     </main>
-    <script src="js/style.js"></script>
-    s
+    <script>
+        const student = { name: 'kismot ali', age: 56, height: 64 }
+        // console.log(document.body);
+        // const blogTitle = ['h3', 'h3', 'h3'];
+        const blogTitles = document.getElementsByTagName('h3');
+        for (const h3 of blogTitles) {
+            console.log(h3.innerText);
+        }
+        const blogDetails = document.getElementsByTagName('p');
+        for (const p of blogDetails) {
+            console.log(p.innerText);
+        }
+    </script>
 </body>
 
 </html>

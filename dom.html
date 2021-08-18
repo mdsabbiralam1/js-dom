@@ -11,6 +11,12 @@
             color: rgb(236, 189, 155);
             background-color: darkcyan;
         } */
+        .blog {
+            border: 2px solid magenta;
+            margin: 5px;
+            padding: 3px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -21,26 +27,33 @@
     </header>
     <main>
         <section>
-            <article>
+            <ul id="blog-title">
+                <li>blog -1</li>
+                <li>blog -2</li>
+                <li>blog -3</li>
+                <li>blog -4</li>
+                <li>blog -5</li>
+            </ul>
+            <article class="blog">
                 <h3 id="first-title">my awesome blog -1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident nihil tempora nulla debitis!
                     Id aspernatur minima asperiores eius natus sunt architecto quos ipsum, numquam delectus minus quod
                     reprehenderit commodi.</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id="second-title">my awesome blog -2</h3>
                 <p>Obcaecati omnis sed nobis tempore ut quibusdam voluptatem, accusantium vel sequi
                     doloribus odio
                     laboriosam maxime molestiae veritatis aliquid quae nostrum, asperiores corporis exercitationem
                     delectus dolorem doloremque dolores dolorum. Consectetur, repudiandae!</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id="third-title">my awesome blog -3</h3>
                 <p>Praesentium officia, doloremque atque optio ipsum quas soluta fuga voluptas consequatur saepe
                     molestias ipsa tenetur quibusdam, magni assumenda illo cum nemo commodi alias labore, quasi minus
                     harum odit! Accusamus, eligendi!</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id='fourth-title'>my awesome blog -4</h3>
                 <p>Praesentium officia, doloremque atque optio ipsum quas soluta fuga voluptas consequatur saepe
                     molestias ipsa tenetur quibusdam, magni assumenda illo cum nemo commodi alias labore, quasi minus
@@ -74,6 +87,21 @@
         fourthTitle.style.color = "green";
         fourthTitle.style.backgroundColor = "yellow";
 
+        // explore getElementByClass name 
+        const blogs = document.getElementsByClassName('blog');
+        for (const blog of blogs) {
+            console.log(blog);
+        }
+
+        // creat and add element by javascript
+        // creat element
+        const li = document.createElement('li');
+        li.innerText = ('blog-7');
+        // where add element
+        const ul = document.getElementById('blog-title');
+
+        // append new element
+        ul.appendChild(li);
     </script>
 </body>
 
